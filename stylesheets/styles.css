@@ -114,13 +114,15 @@ header ul {
   list-style:none;
   height:40px;
   padding:0;
+  padding-top:5px;
   width:270px;
 }
 
 header li {
-  width:89px;
+  width:auto;
   float:left;
   height:40px;
+  padding-right:10px;
 }
 
 header li:first-child a {
@@ -152,11 +154,6 @@ header ul a:active {
 strong {
   color:#222;
   font-weight:500;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
 }
 
 header ul a strong {
