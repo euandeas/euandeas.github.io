@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="../stylesheets/flickity.css" media="screen">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,7 +38,15 @@
         <p>This app was built using C# and Xamarin.Android<p>
         
         <h2>Images</h2>
-        <p>Coming Soon...</p>
+        <div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true }'>
+  		<div class="carousel-cell"><img src="../Assets/RowerStuff/pace.png" alt="" /></div>
+  		<div class="carousel-cell"><img src="../Assets/RowerStuff/watts.png" alt="" /></div>
+  		<div class="carousel-cell"><img src="../Assets/RowerStuff/weight.png" alt="" /></div>
+		<div class="carousel-cell"><img src="../Assets/RowerStuff/pred.png" alt="" /></div>
+		<div class="carousel-cell"><img src="../Assets/RowerStuff/vo.png" alt="" /></div>
+		<div class="carousel-cell"><img src="../Assets/RowerStuff/rate.png" alt="" /></div>
+		<div class="carousel-cell"><img src="../Assets/RowerStuff/percentage.png" alt="" /></div>
+	</div>
         
         <h2>Get It</h2>
         <p>The app can be downloaded on android devices from <a href="https://play.google.com/store/apps/details?id=com.euandeas.RowerStuff&hl=en_GB">here</a>.</p>
@@ -49,5 +58,6 @@
       </footer>
     </div>
     <script src="../javascripts/scale.fix.js"></script>
+    <script src="../javascripts/flickity.pkgd.min.js"></script>
   </body>
 </html>
