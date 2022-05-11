@@ -95,12 +95,34 @@ xmp {
 }
 
 html, body {
-    background-color: #c6c6c6;
+    background-color: var(--bkg-color);
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      --text-color: #eee;
+      --bkg-color: #121212;
+    }
+    body.light-theme {
+      --text-color: #222;
+      --bkg-color: #fff;
+    }
+  }
+
 .header {
-    background: #363636;
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     flex: none;
     height: 55px;
@@ -127,7 +149,7 @@ html, body {
     padding-top: 0px;
     font-weight: 300;
     font-size: 12px;
-    color: #f6f6f6 !important;
+    color: var(--text-color);
     z-index: 3;
     position: relative;
 }
