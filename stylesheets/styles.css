@@ -91,7 +91,7 @@ xmp {
  border:0;
  margin:0;
  padding:0;
- font-size:100%
+ font-size:100%;
 }
 
 html, body {
@@ -197,4 +197,32 @@ a {
   color: var(--text-color);
   z-index: 3;
   position: relative;
+}
+
+.button404 {
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  white-space: nowrap;
+  border-width : 0;
+  line-height: 1.2;
+  border-radius: 0.375rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  font-size: 1rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  background: #52799e;
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.button404:hover {
+  background: #5881a8;
+}
+
+.button404:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
 }
