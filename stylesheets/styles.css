@@ -138,7 +138,7 @@ body.dark-theme {
 }
 
 .header-inner {
-    max-width: 1200px;
+    max-width: 960px;
     height: 55px;
     margin: 0 auto;
     position: relative;
@@ -152,7 +152,7 @@ body.dark-theme {
     display: block;
     height: 55px;
     line-height: 55px;
-    padding: 0 10px;
+    padding: 0 20px;
     padding-top: 0px;
     font-weight: 300;
     font-size: 14px;
@@ -176,7 +176,7 @@ a {
 }
 
 .footer-inner {
-  max-width: 1200px;
+  max-width: 960px;
   height: 44px;
   margin: 0 auto;
   position: relative;
@@ -225,4 +225,27 @@ a {
 
 .button404:focus {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
+
+.content-heading{
+  font-size: 20px; 
+  padding-bottom: 15px; 
+  text-decoration: underline;
+  text-decoration-color: currentcolor;
+  text-decoration-thickness: auto;
+  text-underline-offset: 6px;
+  text-decoration-color: #525252;
+  text-decoration-thickness: 3px;
+}
+
+.language-bubble{
+  background: #68686844;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  padding: 10px 15px 10px 15px;
+  margin-left: 5px;
+  margin-bottom: 10px;
 }
