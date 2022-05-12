@@ -96,42 +96,49 @@ xmp {
 
 html, body {
     background-color: var(--bkg-color);
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    --text-color: #222;
-    --bkg-color: #fff;
+    --text-color: #1a202c;
+    --bkg-color: #f0e7db;
+    --header-color: #f6f0e8;
   }
 
 body.dark-theme {
-    --text-color: #eee;
-    --bkg-color: #121212;
+    --text-color: #ededed;
+    --bkg-color: #202023;
+    --header-color: #323234;
   }
   
   @media (prefers-color-scheme: dark) {
     /* defaults to dark theme */
     body {
-      --text-color: #eee;
-      --bkg-color: #121212;
+      --text-color: #ededed;
+      --bkg-color: #202023;
+      --header-color: #323234;
     }
     body.light-theme {
-      --text-color: #222;
-      --bkg-color: #fff;
+      --text-color: #1a202c;
+      --bkg-color: #f0e7db;
+      --header-color: #f6f0e8;
     }
   }
 
 .header {
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--header-color);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     flex: none;
     height: 55px;
-    position: relative;
+    position: fixed;
+    top:0;
+    width:100%;
     z-index: 100;
 }
 
 .header-inner {
-    width: 1200px;
+    max-width: 1200px;
     height: 55px;
     margin: 0 auto;
     position: relative;
@@ -145,10 +152,10 @@ body.dark-theme {
     display: block;
     height: 55px;
     line-height: 55px;
-    padding: 0 15px;
+    padding: 0 10px;
     padding-top: 0px;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-color);
     z-index: 3;
     position: relative;
@@ -157,4 +164,37 @@ body.dark-theme {
 a {
     background-color: transparent;
     text-decoration: none;
+}
+
+.footer {
+  background: var(--bkg-color);
+  flex: none;
+  height: 84px;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  height: 44px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  z-index: 99; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-item {
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+  padding-top: 0px;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--text-color);
+  z-index: 3;
+  position: relative;
 }
