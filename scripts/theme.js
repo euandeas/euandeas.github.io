@@ -8,16 +8,16 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   document.body.classList.toggle("dark-theme");
-  icon.src = "assets/moon.svg";
-  linkedin.src = "assets/linkedindark.svg";
-  instagram.src = "assets/instagramdark.svg";
-  github.src = "assets/githubdark.svg";
+  icon.src = "../assets/moon.svg";
+  linkedin.src = "../assets/linkedindark.svg";
+  instagram.src = "../assets/instagramdark.svg";
+  github.src = "../assets/githubdark.svg";
 } else if (currentTheme == "light") {
   document.body.classList.toggle("light-theme");
-  icon.src = "assets/sun.svg";
-  linkedin.src = "assets/linkedin.svg";
-  instagram.src = "assets/instagram.svg";
-  github.src = "assets/github.svg";
+  icon.src = "../assets/sun.svg";
+  linkedin.src = "../assets/linkedin.svg";
+  instagram.src = "../assets/instagram.svg";
+  github.src = "../assets/github.svg";
 }
 else{
   if (!prefersDarkScheme.matches) {
@@ -33,16 +33,16 @@ else{
   }
   localStorage.setItem("theme", theme);
   if (theme == "dark"){
-    icon.src = "assets/moon.svg";
-    linkedin.src = "assets/linkedindark.svg";
-    instagram.src = "assets/instagramdark.svg";
-    github.src = "assets/githubdark.svg";
+    icon.src = "../assets/moon.svg";
+    linkedin.src = "../assets/linkedindark.svg";
+    instagram.src = "../assets/instagramdark.svg";
+    github.src = "../assets/githubdark.svg";
   }
   else{
-    icon.src = "assets/sun.svg";
-    linkedin.src = "assets/linkedin.svg";
-    instagram.src = "assets/instagram.svg";
-    github.src = "assets/github.svg";
+    icon.src = "../assets/sun.svg";
+    linkedin.src = "../assets/linkedin.svg";
+    instagram.src = "../assets/instagram.svg";
+    github.src = "../assets/github.svg";
   }
 }
 
@@ -60,16 +60,16 @@ btn.addEventListener("click", function () {
   }
   localStorage.setItem("theme", theme);
   if (theme == "dark"){
-    icon.src = "assets/moon.svg";
-    linkedin.src = "assets/linkedindark.svg";
-    instagram.src = "assets/instagramdark.svg";
-    github.src = "assets/githubdark.svg";
+    icon.src = "../assets/moon.svg";
+    linkedin.src = "../assets/linkedindark.svg";
+    instagram.src = "../assets/instagramdark.svg";
+    github.src = "../assets/githubdark.svg";
   }
   else{
-    icon.src = "assets/sun.svg";
-    linkedin.src = "assets/linkedin.svg";
-    instagram.src = "assets/instagram.svg";
-    github.src = "assets/github.svg";
+    icon.src = "../assets/sun.svg";
+    linkedin.src = "../assets/linkedin.svg";
+    instagram.src = "../assets/instagram.svg";
+    github.src = "../assets/github.svg";
   }
 });
 
