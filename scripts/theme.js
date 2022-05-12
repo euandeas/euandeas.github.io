@@ -8,16 +8,12 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   document.body.classList.toggle("dark-theme");
-} else if (currentTheme == "light") {
-  document.body.classList.toggle("light-theme");
-}
-if (currentTheme == "dark"){
   icon.src = "assets/moon.svg";
   linkedin.src = "assets/linkedindark.svg";
   instagram.src = "assets/instagramdark.svg";
   github.src = "assets/githubdark.svg";
-}
-else{
+} else if (currentTheme == "light") {
+  document.body.classList.toggle("light-theme");
   icon.src = "assets/sun.svg";
   linkedin.src = "assets/linkedin.svg";
   instagram.src = "assets/instagram.svg";
