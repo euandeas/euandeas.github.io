@@ -6,7 +6,6 @@ const github = document.getElementById("githubicon");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 const currentTheme = localStorage.getItem("theme");
-console.log(currentTheme);
 if (currentTheme == "dark") {
   document.body.classList.toggle("dark-theme");
   icon.src = "assets/moon.svg";
@@ -21,7 +20,7 @@ if (currentTheme == "dark") {
   github.src = "assets/github.svg";
 }
 else{
-  if (prefersDarkScheme.matches) {
+  if (!prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
     var theme = document.body.classList.contains("light-theme")
       ? "light"
