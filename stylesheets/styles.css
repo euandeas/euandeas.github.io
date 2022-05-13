@@ -129,7 +129,6 @@ body.dark-theme {
 .header {
     background: var(--header-color);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-    flex: none;
     height: 55px;
     position: fixed;
     top:0;
@@ -168,7 +167,6 @@ a {
 
 .footer {
   background: var(--bkg-color);
-  flex: none;
   height: 84px;
   position: relative;
   z-index: 100;
