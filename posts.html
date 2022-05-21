@@ -36,7 +36,7 @@
       
       {% for post in site.posts %}
       <h1 class="grid-100 mobile-grid-100 content-heading" style="font-size: 36px;"><a href="{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h1>
-      <p class="grid-100 mobile-grid-100" style="font-size: 16px; margin-bottom:10px; color:darkgrey">01/02/34</p>
+      <p class="grid-100 mobile-grid-100" style="font-size: 16px; margin-bottom:10px; color:darkgrey">{{ post.date | date: "%Y-%m-%d" }}</p>
       <p class="grid-100 mobile-grid-100" style="font-size: 16px; margin-bottom:15px;">{{ post.post_description }}</p>
       <a href="{{ post.url }}" class="grid-100 mobile-grid-100 button404" style="font-size: 16px;margin-bottom: 40px;">Read More</a>
       {% endfor %}
