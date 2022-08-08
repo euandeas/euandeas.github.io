@@ -4,6 +4,7 @@ const logo = document.getElementById("logo");
 const linkedin = document.getElementById("linkedinicon");
 const instagram = document.getElementById("instaicon");
 const github = document.getElementById("githubicon");
+const menu = document.getElementById("menuicon");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 const currentTheme = localStorage.getItem("theme");
@@ -14,6 +15,7 @@ if (currentTheme == "dark") {
   linkedin.src = "/assets/linkedindark.svg";
   instagram.src = "/assets/instagramdark.svg";
   github.src = "/assets/githubdark.svg";
+  menu.src = "/assets/menudark.svg"
 } else if (currentTheme == "light") {
   document.body.classList.toggle("light-theme");
   logo.src = "/assets/logocb.png"
@@ -21,6 +23,7 @@ if (currentTheme == "dark") {
   linkedin.src = "/assets/linkedin.svg";
   instagram.src = "/assets/instagram.svg";
   github.src = "/assets/github.svg";
+  menu.src = "/assets/menu.svg"
 }
 else{
   if (!prefersDarkScheme.matches) {
@@ -41,6 +44,7 @@ else{
     linkedin.src = "/assets/linkedindark.svg";
     instagram.src = "/assets/instagramdark.svg";
     github.src = "/assets/githubdark.svg";
+    menu.src = "/assets/menudark.svg"
   }
   else{
     logo.src = "/assets/logocb.png"
@@ -48,6 +52,7 @@ else{
     linkedin.src = "/assets/linkedin.svg";
     instagram.src = "/assets/instagram.svg";
     github.src = "/assets/github.svg";
+    menu.src = "/assets/menu.svg"
   }
 }
 
@@ -70,6 +75,7 @@ btn.addEventListener("click", function () {
     linkedin.src = "/assets/linkedindark.svg";
     instagram.src = "/assets/instagramdark.svg";
     github.src = "/assets/githubdark.svg";
+    menu.src = "/assets/menudark.svg"
   }
   else{
     logo.src = "/assets/logocb.png"
@@ -77,6 +83,7 @@ btn.addEventListener("click", function () {
     linkedin.src = "/assets/linkedin.svg";
     instagram.src = "/assets/instagram.svg";
     github.src = "/assets/github.svg";
+    menu.src = "/assets/menu.svg"
   }
 });
 

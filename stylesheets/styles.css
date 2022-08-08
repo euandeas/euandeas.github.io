@@ -147,6 +147,18 @@ body.dark-theme {
     padding-right: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .wide {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .thin {
+      display: none;
+  }
+}
+
 .header-nav-item {
     display: flex; 
     align-items: center;
@@ -291,4 +303,13 @@ a {
 
 .project-card:focus {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
