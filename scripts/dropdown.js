@@ -1,4 +1,4 @@
-const menuicon = document.querySelector(".menu-icon");
+const menuicon = document.querySelector(".menu-toggle");
 const dropdown = document.getElementsByClassName("dropdown-content")
 
 menuicon.addEventListener("click", function () {

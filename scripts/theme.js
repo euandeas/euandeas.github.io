@@ -7,7 +7,7 @@ const logo2 = document.getElementById("logo2");
 const linkedin = document.getElementById("linkedinicon");
 const instagram = document.getElementById("instaicon");
 const github = document.getElementById("githubicon");
-const menu = document.getElementById("menuicon");
+const menu = document.querySelector(".menu-icon");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 const currentTheme = localStorage.getItem("theme");
