@@ -1,6 +1,8 @@
 const btn = document.querySelector(".btn-toggle");
 const icon = document.querySelector(".theme-icon");
+const icon2 = document.querySelector(".theme-icon2");
 const logo = document.getElementById("logo");
+const logo2 = document.getElementById("logo2");
 const linkedin = document.getElementById("linkedinicon");
 const instagram = document.getElementById("instaicon");
 const github = document.getElementById("githubicon");
@@ -11,7 +13,9 @@ const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   document.body.classList.toggle("dark-theme");
   logo.src = "/assets/logowcb.png"
+  logo2.src = "/assets/logowcb.png"
   icon.src = "/assets/moon.svg";
+  icon2.src = "/assets/moon.svg";
   linkedin.src = "/assets/linkedindark.svg";
   instagram.src = "/assets/instagramdark.svg";
   github.src = "/assets/githubdark.svg";
@@ -19,7 +23,9 @@ if (currentTheme == "dark") {
 } else if (currentTheme == "light") {
   document.body.classList.toggle("light-theme");
   logo.src = "/assets/logocb.png"
+  logo2.src = "/assets/logocb.png"
   icon.src = "/assets/sun.svg";
+  icon2.src = "/assets/sun.svg";
   linkedin.src = "/assets/linkedin.svg";
   instagram.src = "/assets/instagram.svg";
   github.src = "/assets/github.svg";
@@ -40,7 +46,9 @@ else{
   localStorage.setItem("theme", theme);
   if (theme == "dark"){
     logo.src = "/assets/logowcb.png"
+    logo2.src = "/assets/logowcb.png"
     icon.src = "/assets/moon.svg";
+    icon2.src = "/assets/moon.svg";
     linkedin.src = "/assets/linkedindark.svg";
     instagram.src = "/assets/instagramdark.svg";
     github.src = "/assets/githubdark.svg";
@@ -48,7 +56,9 @@ else{
   }
   else{
     logo.src = "/assets/logocb.png"
+    logo2.src = "/assets/logocb.png"
     icon.src = "/assets/sun.svg";
+    icon2.src = "/assets/sun.svg";
     linkedin.src = "/assets/linkedin.svg";
     instagram.src = "/assets/instagram.svg";
     github.src = "/assets/github.svg";
@@ -71,7 +81,9 @@ btn.addEventListener("click", function () {
   localStorage.setItem("theme", theme);
   if (theme == "dark"){
     logo.src = "/assets/logowcb.png"
+    logo2.src = "/assets/logowcb.png"
     icon.src = "/assets/moon.svg";
+    icon2.src = "/assets/moon.svg";
     linkedin.src = "/assets/linkedindark.svg";
     instagram.src = "/assets/instagramdark.svg";
     github.src = "/assets/githubdark.svg";
@@ -79,7 +91,9 @@ btn.addEventListener("click", function () {
   }
   else{
     logo.src = "/assets/logocb.png"
+    logo2.src = "/assets/logocb.png"
     icon.src = "/assets/sun.svg";
+    icon2.src = "/assets/sun.svg";
     linkedin.src = "/assets/linkedin.svg";
     instagram.src = "/assets/instagram.svg";
     github.src = "/assets/github.svg";
