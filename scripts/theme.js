@@ -50,22 +50,14 @@ btn2.addEventListener("click", function () {
 function changeTheme(){
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
-    var theme = document.body.classList.contains("light-theme")
-      ? "light"
-      : "dark";
+    var theme = "light";
+    setLight();
   } else {
     document.body.classList.toggle("dark-theme");
-    var theme = document.body.classList.contains("dark-theme")
-      ? "dark"
-      : "light";
-  }
-  localStorage.setItem("theme", theme);
-  if (theme == "dark"){
+    var theme = "dark";
     setDark();
   }
-  else{
-    setLight();
-  }
+  localStorage.setItem("theme", theme);
 }
 
 function setDark(){
