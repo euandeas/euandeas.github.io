@@ -111,20 +111,6 @@ body.dark-theme {
     --bkg-color: #202023;
     --header-color: #323234;
   }
-  
-  @media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
-    body {
-      --text-color: #ededed;
-      --bkg-color: #202023;
-      --header-color: #323234;
-    }
-    body.light-theme {
-      --text-color: #1a202c;
-      --bkg-color: #f0e7db;
-      --header-color: #f6f0e8;
-    }
-  }
 
 .header {
     background: var(--header-color);
