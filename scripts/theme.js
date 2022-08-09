@@ -42,14 +42,21 @@ btn2.addEventListener("click", function () {
 function changeTheme(){
   if (localStorage.getItem("theme") == "dark") {
     document.body.classList.toggle("light-theme");
-    setLight();
     var theme = "light";
   } else {
     document.body.classList.toggle("dark-theme");
-    setDark();
     var theme = "dark";
   }
   localStorage.setItem("theme", theme);
+  
+  if(theme == "light")
+  {
+    setLight();
+  }
+  else
+  {
+    setDark();
+  }
 }
 
 function setDark(){
