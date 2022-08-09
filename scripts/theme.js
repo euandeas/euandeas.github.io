@@ -62,8 +62,8 @@ function changeTheme(){
 }
 
 function setDark(){
-  logo.src = "/assets/logowcb.png"
-  logo2.src = "/assets/logowcb.png"
+  logo.src = "/assets/logowcb.png";
+  logo2.src = "/assets/logowcb.png";
   icon.src = "/assets/moon.svg";
   icon2.src = "/assets/moon.svg";
   linkedin.src = "/assets/linkedindark.svg";
@@ -73,8 +73,8 @@ function setDark(){
 }
 
 function setLight(){
-  logo.src = "/assets/logocb.png"
-    logo2.src = "/assets/logocb.png"
+  logo.src = "/assets/logocb.png";
+    logo2.src = "/assets/logocb.png";
     icon.src = "/assets/sun.svg";
     icon2.src = "/assets/sun.svg";
     linkedin.src = "/assets/linkedin.svg";
