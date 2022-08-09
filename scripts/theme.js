@@ -40,7 +40,7 @@ btn2.addEventListener("click", function () {
 });
 
 function changeTheme(){
-  if (localStorage.getItem("theme") == "light") {
+  if (!localStorage.getItem("theme") == "light") {
     document.body.classList.toggle("light-theme");
     var theme = "light";
     setLight();
