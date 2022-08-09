@@ -39,9 +39,13 @@ else{
   }
 }
 
-btn.addEventListener("click", changeTheme());
+btn.addEventListener("click", function () {
+  changeTheme();
+});
 
-btn2.addEventListener("click", changeTheme());
+btn2.addEventListener("click", function () {
+  changeTheme();
+});
 
 function changeTheme(){
   if (prefersDarkScheme.matches) {
