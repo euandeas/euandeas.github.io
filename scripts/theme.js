@@ -13,24 +13,10 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   document.body.classList.toggle("dark-theme");
-  logo.src = "/assets/logowcb.png"
-  logo2.src = "/assets/logowcb.png"
-  icon.src = "/assets/moon.svg";
-  icon2.src = "/assets/moon.svg";
-  linkedin.src = "/assets/linkedindark.svg";
-  instagram.src = "/assets/instagramdark.svg";
-  github.src = "/assets/githubdark.svg";
-  menu.src = "/assets/menudark.svg"
+  setDark();
 } else if (currentTheme == "light") {
   document.body.classList.toggle("light-theme");
-  logo.src = "/assets/logocb.png"
-  logo2.src = "/assets/logocb.png"
-  icon.src = "/assets/sun.svg";
-  icon2.src = "/assets/sun.svg";
-  linkedin.src = "/assets/linkedin.svg";
-  instagram.src = "/assets/instagram.svg";
-  github.src = "/assets/github.svg";
-  menu.src = "/assets/menu.svg"
+  setLight();
 }
 else{
   if (!prefersDarkScheme.matches) {
@@ -46,28 +32,18 @@ else{
   }
   localStorage.setItem("theme", theme);
   if (theme == "dark"){
-    logo.src = "/assets/logowcb.png"
-    logo2.src = "/assets/logowcb.png"
-    icon.src = "/assets/moon.svg";
-    icon2.src = "/assets/moon.svg";
-    linkedin.src = "/assets/linkedindark.svg";
-    instagram.src = "/assets/instagramdark.svg";
-    github.src = "/assets/githubdark.svg";
-    menu.src = "/assets/menudark.svg"
+    setDark();
   }
   else{
-    logo.src = "/assets/logocb.png"
-    logo2.src = "/assets/logocb.png"
-    icon.src = "/assets/sun.svg";
-    icon2.src = "/assets/sun.svg";
-    linkedin.src = "/assets/linkedin.svg";
-    instagram.src = "/assets/instagram.svg";
-    github.src = "/assets/github.svg";
-    menu.src = "/assets/menu.svg"
+    setLight();
   }
 }
 
-btn.addEventListener("click", function () {
+btn.addEventListener("click", changeTheme());
+
+btn2.addEventListener("click", changeTheme());
+
+function changeTheme(){
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
     var theme = document.body.classList.contains("light-theme")
@@ -81,59 +57,31 @@ btn.addEventListener("click", function () {
   }
   localStorage.setItem("theme", theme);
   if (theme == "dark"){
-    logo.src = "/assets/logowcb.png"
-    logo2.src = "/assets/logowcb.png"
-    icon.src = "/assets/moon.svg";
-    icon2.src = "/assets/moon.svg";
-    linkedin.src = "/assets/linkedindark.svg";
-    instagram.src = "/assets/instagramdark.svg";
-    github.src = "/assets/githubdark.svg";
-    menu.src = "/assets/menudark.svg"
+    setDark();
   }
   else{
-    logo.src = "/assets/logocb.png"
+    setLight();
+  }
+}
+
+function setDark(){
+  logo.src = "/assets/logowcb.png"
+  logo2.src = "/assets/logowcb.png"
+  icon.src = "/assets/moon.svg";
+  icon2.src = "/assets/moon.svg";
+  linkedin.src = "/assets/linkedindark.svg";
+  instagram.src = "/assets/instagramdark.svg";
+  github.src = "/assets/githubdark.svg";
+  menu.src = "/assets/menudark.svg";
+}
+
+function setLight(){
+  logo.src = "/assets/logocb.png"
     logo2.src = "/assets/logocb.png"
     icon.src = "/assets/sun.svg";
     icon2.src = "/assets/sun.svg";
     linkedin.src = "/assets/linkedin.svg";
     instagram.src = "/assets/instagram.svg";
     github.src = "/assets/github.svg";
-    menu.src = "/assets/menu.svg"
-  }
-});
-
-btn2.addEventListener("click", function () {
-  if (prefersDarkScheme.matches) {
-    document.body.classList.toggle("light-theme");
-    var theme = document.body.classList.contains("light-theme")
-      ? "light"
-      : "dark";
-  } else {
-    document.body.classList.toggle("dark-theme");
-    var theme = document.body.classList.contains("dark-theme")
-      ? "dark"
-      : "light";
-  }
-  localStorage.setItem("theme", theme);
-  if (theme == "dark"){
-    logo.src = "/assets/logowcb.png"
-    logo2.src = "/assets/logowcb.png"
-    icon.src = "/assets/moon.svg";
-    icon2.src = "/assets/moon.svg";
-    linkedin.src = "/assets/linkedindark.svg";
-    instagram.src = "/assets/instagramdark.svg";
-    github.src = "/assets/githubdark.svg";
-    menu.src = "/assets/menudark.svg"
-  }
-  else{
-    logo.src = "/assets/logocb.png"
-    logo2.src = "/assets/logocb.png"
-    icon.src = "/assets/sun.svg";
-    icon2.src = "/assets/sun.svg";
-    linkedin.src = "/assets/linkedin.svg";
-    instagram.src = "/assets/instagram.svg";
-    github.src = "/assets/github.svg";
-    menu.src = "/assets/menu.svg"
-  }
-});
-
+    menu.src = "/assets/menu.svg";
+}
