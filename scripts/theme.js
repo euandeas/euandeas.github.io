@@ -1,3 +1,4 @@
+const body = document.getElementById('body');
 const btn = document.querySelector(".btn-toggle");
 const btn2 = document.querySelector(".btn-toggle2");
 const icon = document.querySelector(".theme-icon");
@@ -41,12 +42,10 @@ btn2.addEventListener("click", function () {
 
 function changeTheme(){
   if (localStorage.getItem("theme") == "dark") {
-    document.body.classList.toggle("light-theme");
-    document.body.classList.contains("light-theme");
+    body.classList.toggle("light-theme");
     var theme = "light";
   } else {
-    document.body.classList.toggle("dark-theme");
-    document.body.classList.contains("dark-theme")
+    body.classList.toggle("dark-theme");
     var theme = "dark";
   }
   localStorage.setItem("theme", theme);
