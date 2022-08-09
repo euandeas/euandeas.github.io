@@ -1,4 +1,3 @@
-const body = document.getElementById('body');
 const btn = document.querySelector(".btn-toggle");
 const btn2 = document.querySelector(".btn-toggle2");
 const icon = document.querySelector(".theme-icon");
@@ -39,7 +38,7 @@ btn2.addEventListener("click", function () {
 });
 
 function changeTheme(){
-  body.classList.toggle("dark-theme");
+  document.body.classList.toggle("dark-theme");
   if (localStorage.getItem("theme") == "dark") {
     var theme = "light";
     setLight();
