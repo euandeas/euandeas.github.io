@@ -5,7 +5,11 @@ module.exports = {
 		fontFamily: {
 			sans: ['Inter', 'sans-serif']
 		},
-		extend: {}
+		extend: {
+			colors: {
+				'brand-blue': '#1c64a0'
+			}
+		}
 	},
 	plugins: []
 };
