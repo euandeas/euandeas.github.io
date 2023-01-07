@@ -1,6 +1,7 @@
-<div class="h-screen grid place-content-center bg-gray-300">
-	<h1 class="text-5xl font-bold text-blue-600">Welcome to SvelteKit</h1>
-	<p class="text-xl text-red-500">
-		Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-	</p>
-</div>
+<script>
+	import Header from '$lib/components/layout/header.svelte';
+	import Footer from '$lib/components/layout/footer.svelte';
+</script>
+
+<Header />
+<Footer />

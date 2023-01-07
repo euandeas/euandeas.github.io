@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2in" height="2in" viewBox="0 0 600 600">
+<svg class="{$$restProps.class || ''}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
 	<path
 		id="Initials"
 		class="fill-black dark:fill-white"
