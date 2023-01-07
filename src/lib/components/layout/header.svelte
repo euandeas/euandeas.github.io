@@ -56,5 +56,5 @@
 			</div>
 		</div>
 	</div>
-	<div class="bg-gradient-to-b dark:from-black from-white to-transparent h-12"/>
+	<div class="bg-gradient-to-b dark:from-black from-white to-transparent h-12" />
 </header>
