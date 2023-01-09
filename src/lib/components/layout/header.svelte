@@ -24,7 +24,7 @@
 	}
 </script>
 
-<header class="sticky top-0 flex flex-col">
+<header class="relative">
 	<div class="px-4 sm:px-6 md:px-8 bg-white dark:bg-black">
 		<div class="relative pt-6 pb-6 lg:pt-8 flex items-center justify-between">
 			<a href="/"><Logo class="w-auto h-16" /></a>
@@ -56,5 +56,4 @@
 			</div>
 		</div>
 	</div>
-	<div class="bg-gradient-to-b dark:from-black from-white to-transparent h-12" />
 </header>

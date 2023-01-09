@@ -1,7 +1,7 @@
 <script>
-	import Header from '$lib/components/layout/header.svelte';
-	import Footer from '$lib/components/layout/footer.svelte';
+	import Hero from '$lib/components/home/hero.svelte';
+	import Card from '$lib/components/base/card.svelte';
 </script>
 
-<Header />
-<Footer />
+<Hero />
+<Card />
