@@ -5,7 +5,7 @@
 </script>
 
 <footer class="w-full">
-	<div class="flex flex-col items-center justify-center space-y-2">
+	<div class="flex flex-col items-center justify-center space-y-2 pb-10">
 		<p class="text-sm">© Euan Deas {currentYear}</p>
 		<Socials />
 	</div>

@@ -1,6 +1,4 @@
 <script>
-	import { browser } from '$app/environment';
-
 	import Logo from '$lib/svg/logo.svelte';
 	import Menu from '$lib/svg/icon/menu.svelte';
 	import Sun from '$lib/svg/icon/sun.svelte';

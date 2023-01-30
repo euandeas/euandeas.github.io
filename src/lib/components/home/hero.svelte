@@ -1,4 +1,4 @@
-<div class="relative flex flex-col">
+<div class="relative flex flex-col pb-6 mb-5">
 	<div class="bg-white dark:bg-black pb-20 sm:pb-24 lg:pb-32">
 		<div class="max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
 			<h1
