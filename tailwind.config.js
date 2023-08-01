@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+export default {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
 		fontFamily: {
@@ -12,5 +12,6 @@ module.exports = {
 			}
 		}
 	},
-	plugins: []
-};
+	plugins: [],
+}
+

@@ -1,9 +1,2 @@
-<script>
-	import Hero from '$lib/components/home/hero.svelte';
-	import About from '$lib/components/home/about.svelte';
-	import Skills from '$lib/components/home/skills.svelte';
-</script>
-
-<Hero />
-<About />
-<Skills />
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
